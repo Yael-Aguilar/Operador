@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Operador
+
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    service-url:
+      defaultZone:
+        ${eureka_url:http://localhost:8761/eureka/}
+
+  instance:
+    prefer-ip-address: false
+
+getBuscador:
+  url: http://BUSCADOR/api
+
